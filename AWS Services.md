@@ -1,0 +1,122 @@
+## AWS SERVICES:
+
+- **Amazon EC2 (Elastic Compute Cloud)** - Provides scalable virtual servers in the cloud.
+- **Amazon S3 (Simple Storage Service)** - Offers scalable object storage for data backup and archival.
+- **Amazon RDS (Relational Database Service)** - Manages relational databases in the cloud.
+- **Amazon DynamoDB** - Provides a fully managed NoSQL database service.
+- **AWS Lambda** - Allows you to run code without provisioning or managing servers.
+- **Amazon VPC (Virtual Private Cloud)** - Creates a private network in the AWS cloud.
+- **Amazon CloudFront** - Delivers content globally via a content delivery network.
+- **Amazon Redshift** - Provides a data warehousing service for large-scale data analysis.
+- **Amazon Aurora** - Offers a high-performance managed relational database compatible with MySQL and PostgreSQL.
+- **Amazon Kinesis** - Processes and analyzes real-time streaming data.
+- **Amazon SNS (Simple Notification Service)** - Manages message delivery from publishers to subscribers.
+- **Amazon SQS (Simple Queue Service)** - Offers a fully managed message queuing service.
+- **AWS Elastic Beanstalk** - Simplifies application deployment and management on AWS.
+- **AWS IAM (Identity and Access Management)** - Manages users and permissions securely.
+- **Amazon EBS (Elastic Block Store)** - Provides persistent block storage for EC2 instances.
+- **Amazon Route 53** - Offers domain name registration and DNS services.
+- **Amazon CloudWatch** - Monitors and logs AWS resources and applications.
+- **AWS CloudTrail** - Logs and monitors account activity across AWS infrastructure.
+- **AWS Glue** - Provides a fully managed ETL (extract, transform, load) service.
+- **Amazon EMR (Elastic MapReduce)** - Processes big data quickly and cost-effectively using Hadoop.
+- **AWS Step Functions** - Coordinates multiple AWS services into serverless workflows.
+- **Amazon EFS (Elastic File System)** - Provides scalable file storage for use with AWS cloud services and on-premises resources.
+- **AWS CodePipeline** - Automates the continuous integration and delivery of software.
+- **AWS CodeCommit** - Offers a managed source control service that hosts Git repositories.
+- **AWS CodeDeploy** - Automates application deployment to EC2 instances, on-premises servers, or Lambda functions.
+- **AWS CodeBuild** - Compiles source code, runs tests, and produces software packages.
+- **Amazon CloudFormation** - Manages and provisions AWS infrastructure using templates.
+- **AWS OpsWorks** - Automates operations with configuration management tools.
+- **AWS Elastic Load Balancing (ELB)** - Distributes incoming application traffic across multiple targets.
+- **Amazon Kinesis Data Streams** - Collects and processes large streams of data records in real time.
+- **AWS Direct Connect** - Establishes a dedicated network connection from your premises to AWS.
+- **Amazon Cognito** - Provides user authentication and access control for web and mobile apps.
+- **AWS WAF (Web Application Firewall)** - Protects web applications from common web exploits.
+- **AWS Shield** - Provides DDoS protection for applications running on AWS.
+- **AWS Snowball** - Transfers large amounts of data to and from AWS using secure appliances.
+- **Amazon MQ** - Manages message brokers for Apache ActiveMQ and RabbitMQ.
+- **Amazon WorkSpaces** - Provides managed, secure Desktop-as-a-Service (DaaS) solutions.
+- **AWS Fargate** - Runs containers without managing servers or clusters.
+- **Amazon Lightsail** - Offers easy-to-use cloud resources for simple web applications and websites.
+- **AWS Batch** - Runs batch computing jobs at any scale.
+- **AWS Glue DataBrew** - A visual data preparation tool to clean and normalize data.
+- **Amazon Timestream** - A time series database for IoT and operational applications.
+- **Amazon SageMaker** - Builds, trains, and deploys machine learning models at scale.
+- **Amazon Transcribe** - Converts speech to text using automatic speech recognition (ASR).
+- **Amazon Translate** - Provides language translation capabilities.
+- **Amazon Comprehend** - Analyzes text for insights and relationships.
+- **Amazon Lex** - Builds conversational interfaces using voice and text.
+- **Amazon Polly** - Converts text to lifelike speech.
+- **Amazon Rekognition** - Analyzes images and videos for facial recognition and object detection.
+- **AWS Cost Explorer** - Visualizes and manages AWS costs and usage over time.
+- **AWS Trusted Advisor** - Provides real-time guidance to help you optimize your AWS environment.
+- **AWS Config** - Tracks AWS resource configurations and changes over time.
+- **AWS Secrets Manager** - Manages secrets and retrieves them securely for applications.
+- **Amazon RDS Proxy** - Improves the availability and scalability of RDS databases.
+- **AWS Database Migration Service (DMS)** - Migrates databases to AWS with minimal downtime.
+- **Amazon Elasticsearch Service (ES)** - Deploys, operates, and scales Elasticsearch in the cloud.
+- **AWS IoT Core** - Connects IoT devices to the cloud and other devices.
+- **AWS AppSync** - Builds scalable applications with real-time and offline capabilities.
+- **Amazon API Gateway** - Creates, publishes, and manages APIs.
+- **AWS Control Tower** - Sets up and governs a secure, multi-account AWS environment.
+- **AWS Service Catalog** - Organizes and governs commonly deployed IT services.
+- **AWS Marketplace** - Finds, buys, and deploys software solutions in the cloud.
+- **AWS Systems Manager** - Centralizes operational data and automates tasks across AWS resources.
+- **AWS X-Ray** - Analyzes and troubleshoots distributed applications.
+- **AWS Elemental MediaConvert** - Converts file-based video content for broadcast and multiscreen delivery.
+- **AWS Elemental MediaLive** - Processes and delivers live video streams.
+- **Amazon QuickSight** - Provides business intelligence and data visualization services.
+- **AWS DataSync** - Transfers data between on-premises storage and AWS.
+- **Amazon Elastic Inference** - Accelerates deep learning inference by attaching low-cost GPU-powered inference acceleration to EC2 instances.
+- **Amazon Forecast** - Uses machine learning to deliver accurate forecasts.
+- **Amazon Personalize** - Provides real-time personalization and recommendation engines.
+- **AWS DeepLens** - A deep learning-enabled video camera to run and test models locally.
+- **Amazon WorkMail** - Provides secure and managed business email and calendaring.
+- **Amazon WorkDocs** - A secure content creation, storage, and collaboration service.
+- **AWS Backup** - Centralizes and automates data backup across AWS services.
+- **AWS RoboMaker** - Develops, tests, and deploys intelligent robotics applications.
+- **AWS Ground Station** - Provides satellite communications as a service.
+- **AWS Outposts** - Extends AWS infrastructure and services to on-premises locations.
+- **Amazon QLDB (Quantum Ledger Database)** - A fully managed ledger database that provides a transparent, immutable, and cryptographically verifiable transaction log.
+- **AWS App Mesh** - Provides application-level networking to standardize how microservices communicate.
+- **Amazon Managed Blockchain** - Creates and manages scalable blockchain networks using popular frameworks.
+- **AWS CodeStar** - Provides a unified interface for managing software development projects.
+- **AWS CloudHSM** - Provides managed hardware security modules in the cloud.
+- **AWS Security Hub** - Provides a comprehensive view of your security alerts and compliance status across AWS accounts.
+- **AWS Artifact** - Provides access to AWS compliance reports and agreements.
+- **AWS Audit Manager** - Helps you continuously audit your AWS usage to simplify risk assessment and compliance.
+- **Amazon Detective** - Analyzes and visualizes security data to identify the root cause of potential security issues.
+- **AWS Firewall Manager** - Centrally configures and manages firewall rules across your accounts and applications.
+- **AWS License Manager** - Manages software licenses from AWS and other vendors.
+- **Amazon FSx** - Provides fully managed file systems for Windows and Lustre.
+- **AWS Transit Gateway** - Connects VPCs and on-premises networks through a central hub.
+- **AWS Global Accelerator** - Improves the availability and performance of your applications with global users.
+- **AWS Snowcone** - A small, rugged, and secure edge computing and data transfer device.
+- **Amazon AppFlow** - Integrates SaaS applications with AWS services to automate data flow.
+- **Amazon Braket** - Provides a fully managed service for quantum computing.
+- **AWS Data Exchange** - Allows you to find, subscribe to, and use third-party data in the cloud.
+- **Amazon Honeycode** - Builds mobile and web apps without programming.
+- **AWS Cloud9** - A cloud-based integrated development environment (IDE) for writing, running, and debugging code.
+- **AWS Elastic Transcoder** - Converts media files in the cloud for playback on various devices.
+- **Amazon Neptune** - A fast, reliable graph database service for building and running applications that work with highly connected datasets.
+- **Amazon Sumerian** - Helps create and run virtual reality (VR), augmented reality (AR), and 3D applications.
+- **AWS Ground Station** - Provides global ground station services for satellite communications.
+- **AWS Proton** - Manages and deploys infrastructure as code (IaC) and microservices.
+- **AWS IoT Greengrass** - Extends AWS to edge devices so they can act locally on the data they generate.
+- **AWS App Runner** - Provides a fully managed service to deploy and run containerized web applications and APIs.
+- **Amazon Fraud Detector** - Detects potential fraud using machine learning.
+- **AWS Amplify** - Develops and deploys secure, scalable mobile and web applications.
+- **AWS Lake Formation** - Helps build, secure, and manage data lakes
+- **AWS Glue Elastic Views** - Materializes data in Amazon Redshift, Amazon DynamoDB, and Amazon S3.
+- **AWS IoT SiteWise** - Collects, organizes, and analyzes data from industrial equipment.
+- **AWS CodeArtifact** - Manages software artifacts securely on AWS.
+- **AWS Network Firewall** - Provides a managed firewall service to protect VPCs.
+- **AWS Well-Architected Tool** - Reviews the state of your workloads and compares them to the latest AWS architectural best practices.
+- **Amazon Chime** - Provides a communications service for online meetings, video conferencing, and chat.
+- **AWS App2Container (A2C)** - A command-line tool for modernizing .NET and Java applications into containerized applications.
+- **Amazon Elastic File System (EFS) One Zone** - Provides lower-cost storage classes for infrequently accessed data in a single availability zone.
+- **AWS Snowmobile** - Transfers exabytes of data to AWS using a secure, ruggedized shipping container.
+- **Amazon Lookout for Equipment** - Detects abnormal equipment behavior by analyzing sensor data.
+- **Amazon Lookout for Vision** - Detects visual anomalies in images using machine learning.
+- **AWS Panorama** - Provides computer vision applications at the edge.
