@@ -1,187 +1,109 @@
-**AWS Certified Cloud Practitioner Official Practice Question Set (CLF-C02)**
-
-**AWS CodeArtifact** - CodeArtifact is a managed artifact repository service that stores and shares software that is ready for deployment. CodeArtifact is not a source code management service.
-
-**AWS CodeBuild** - CodeBuild is a service that helps users to automatically compile source code, run unit tests, and produce software packages that are ready for deployment. CodeBuild is not a code management service.
-
-**AWS CodePipeline -** CodePipeline is a service that manages the movement of a code between the individual services. CodePipeline is not a source code storage service.
-
-**AWS CodeCommit** - CodeCommit is a source code version control service. CodeCommit helps users store and manage developers source code in AWS.
-
-**AWS GlobalAccelerator -**  Global Accelerator is a networking service that improves the performance of your users’ network traffic by up to 60%. Global Accelerator uses the AWS global network infrastructure. Global Accelerator is not a relational database.
-
-**Amazon DynamoDB** - DynamoDB is a fully managed NoSQL database service. DynamoDB provides fast and predictable performance with seamless scalability. However, DynamoDB is not a relational database.
-
-**Amazon Aurora** - Aurora is a MySQL- and PostgreSQL-compatible relational database built for the *cloud*. Aurora combines the performance and availability of traditional enterprise databases with the simplicity and cost-effectiveness of open source databases.
-
-**Amazon Elastic Block Store (Amazon EBS) -** Amazon EBS is an easy-to-use, high-performance block-storage service. You can use Amazon EBS with Amazon EC2 for both throughput- and transaction-intensive workloads at any scale. You can run a database on Amazon EC2 instances and use Amazon EBS for the storage for that database. However, Amazon EBS by itself is not a relational database.
-
-**Amazon CloudWatch** - CloudWatch monitors your AWS resources and the applications that you run on AWS in real time. You can use CloudWatch with AWS CloudTrail to monitor and receive alerts about console sign-in events that involve the AWS account root user.
-
-**AWS Config -** You can use AWS Config to assess, audit, and evaluate the configurations of your AWS resources. AWS Config cannot alert you about console sign-in events that involve the AWS account root user.
-
-**AWS Trusted Advisor** - You can use Trusted Advisor for real-time guidance to help you provision your resources according to AWS best practices. Trusted Advisor cannot alert you about console sign-in events that involve the AWS account root user.
-
-**AWS Identity and Access Management (IAM)** - With IAM, you can manage access to AWS services and resources securely. IAM cannot alert you about the console sign-in events that involve the AWS account root user.
-
-**How does AWS charge for AWS Lambda usage once the free tier has been exceeded?**
-
-By the time it takes for the Lambda function to run
-
-By the number of requests made for a given Lambda function
-
-**A user deploys an Amazon RDS DB instance in multiple Availability Zones. This strategy involves which pillar of the AWS Well-Architected Framework?**
-
-Reliability
-
-**Each department within a company has its own independent AWS account and its own payment method. The company needs to centralize departmental governance and consolidate payments.**
-
-**How can the company achieve these objectives by using AWS services or features?**
-
-Create an organization in AWS Organizations with all features enabled within one account. Invite all accounts to join the organization.
-
-Organizations provides centralized governance and billing for an AWS environment, including multiple accounts.
-
-**What are the advantages of deploying an application with Amazon EC2 instances in multiple Availability Zones? (Select TWO.)**
-
-Increasing the availability of the application
-
-If you host all your instances in a single location that is affected by a failure, none of your instances would be available. Availability Zones are designed for physical redundancy and to provide resilience with uninterrupted performance.
-
-**Which tasks are the customer's responsibility according to the AWS shared responsibility model? (Select TWO.)**
-
-Configure IAM users according to the principle of least privilege.
-
-Configure an Amazon S3 bucket to allow public access.
-
-**A company wants to create a learning application for students. The learning application must give students the option to choose a button to have the text read out loud to them.**
-
-**Which AWS machine learning service will meet this requirement?**
-
-Correct: 
-
-**Amazon Polly**: Amazon Polly is a machine learning service that converts text to speech. This service provides the ability to read text out loud.
-
-Incorrect:
-
-**Amazon Transcribe**: Amazon Transcribe is a service that uses machine learning to convert audio data to text. 
-
-**Amazon Translate:** Amazon Translate is a machine learning language translation service. 
-
-**Amazon Textract:** Amazon Textract is a machine learning service that can extract text from  scanned documents. 
-
-**A company wants to establish a consistent and private connection from the company's on-premises data center to the AWS Cloud.**
-
-**Which AWS service will meet these requirements?**
-
-Correct: 
-
-**AWS Direct Connect:** Direct Connect links your internal network to a Direct Connect location through a standard Ethernet fiber-optic cable. One end of the cable connects to your router. The other end of the cable connects to a Direct Connect router. AWS Direct Connect is consistent and private because your company is the only user of the cable.
-
-Incorrect:
-
-**AWS Client VPN:** Client VPN is a managed client-based VPN service that gives you the ability to securely access your AWS resources and the resources in your on-premises network. With Client VPN, you can access your resources from any location through an OpenVPN-based VPN client. You would use Client VPN to connect individual laptops to AWS, not an entire data center.
-
-**AWS Connect:** Amazon Connect is an omnichannel cloud contact center that helps you provide superior customer service at a lower cost. Amazon Connect provides a seamless experience across voice and chat for your customers and agents.
-
-**AWS Site-to-Site VPN:** Site-to-Site VPN creates an encrypted network path between your on-premises network and your AWS Cloud network. This connection uses the internet, so you cannot expect consistency. Even though the traffic is encrypted, the connection is not private because the internet is a shared resource.
-
-**A company has an on-premises Linux-based server with an Oracle database that runs on it. The company wants to migrate the database server to run on an Amazon EC2 instance in AWS.**
-
-**Which service should the company use to complete the migration?**
-
-Correct:
-
-**AWS Application Migration Service (AWS MGN):** AWS MGN is an automated lift-and-shift solution. This solution can migrate physical servers and any databases or applications that run on them to EC2 instances in AWS.
-
-Incorrect:
-
-**AWS Database Migration Service (AWS DMS):** AWS DMS can be used to migrate data from an on-premises database to a database in AWS.
-
-**AWS Migration Hub:** Migration Hub is a service that helps plan and track application migrations.
-
-**AWS Application Discovery Service:** Application Discovery Service collects information about the usage and configuration of on-premises servers to help plan a migration to AWS.
-
-**A company is hosting a static website from a single Amazon S3 bucket.**
-
-**Which AWS service will achieve lower latency and high transfer speeds?**
-
-Correct:
-
-**Amazon CloudFront:** CloudFront is a web service that speeds up the distribution of your static and dynamic web content, such as .html, .css, .js, and image files, to your users. Content is cached in edge locations. Content that is repeatedly accessed can be served from the edge locations instead of the source S3 bucket.
-
-Incorrect:
-
-**AWS Elastic Beanstalk:** Elastic Beanstalk is a service to deploy and scale web applications and services developed with common programming languages on automatically deployed infrastructure with capacity management, load balancing, auto scaling, and monitoring. Elastic Beanstalk makes it easier to provision and support an application. Elastic Beanstalk does not reduce website latency.
-
-**Amazon DynamoDB Accelerator(DAX):** DAX is used to reduce response times from a DynamoDB table from single-digit milliseconds to microseconds. DynamoDB tables cannot host static websites.
-
-**Amazon Route 53:** Route 53 is a highly available and scalable DNS web service. The three main functions of Route 53 are registering domain names, routing internet traffic to the resources for your domain, and checking the health of those resources. Route 53 can direct traffic to S3 buckets. But because the question describes only one S3 bucket, Route 53 would have only one potential route and could not reduce latency.
-
-**Which credential components are required to gain programmatic access to an AWS account? (Select TWO.)**
-
-An access key ID
-
-A secret access key
-
-**What is the MINIMUM AWS Support plan that provides technical support through phone calls?**
-
-Correct:
-
-**Business:** You can call or chat with technical support by using the Business Support plan or the Enterprise Support plan. The Business Support plan is the minimum plan that provides this feature.
-
-Incorrect:
-
-**Enterprise:** The Enterprise Support plan provides phone support, but it is not the minimum plan to do so.
-
-**Developer:** The Developer Support plan allows only email creation of support tickets and does not provide phone support.
-
-**Basic:** The Basic Support plan provides customer support for non-technical issues, such as increases in service quotas. However, the Basic Support plan does not provide technical support.
-
-**Which AWS service allows customers to purchase unused Amazon EC2 capacity at an often discounted rate?**
-
-Correct:
-
-**Spot Instances:** With Spot Instances, you can access unused EC2 capacity. Spot Instances can be discounted.
-
-Incorrect:
-
-**Reserved Instances:** Reserved Instances reserve some capacity for your use at any time. Reserved Instances can sometimes give you a discount. However, this capacity is not unused capacity.
-
-**On-Demand Instances:** On-Demand Instances are the default purchase option and are immediately available. On-Demand Instances are not discounted.
-
-**Dedicated Instances:** Dedicated Instances run in VPCs on hardware dedicated to that individual customer and are often used when there are licensing or compliance constraints. Dedicated Instances are not discounted.
-
-**What are benefits of using the AWS Cloud for companies with customers in many countries around the world? (Select TWO.)**
-
-Companies can deploy applications in multiple AWS Regions to reduce latency.
-
-Amazon CloudFront has multiple edge locations around the world to reduce latency.
-
-**Which of the functionalities are characteristics of Amazon S3? (Select TWO.)**
-
-An object store
-
-A durable file system
-
-**A company requires an encrypted connection between the company's on-premises servers and AWS. The connection must use the company's existing internet connection.**
-
-**Which solution will meet these requirements?**
-
-**AWS Site-to-Site VPN:** Site-to-Site VPN creates an encrypted network path between your on-premises network and your AWS Cloud network. This connection between your on-premises network and your AWS Cloud network uses the internet. 
-
-**A user needs to automatically discover, classify, and protect sensitive data stored in Amazon S3.**
-
-**Which AWS service can meet these requirements?**
-
-Correct: 
-
-**Amazon Macie:** Macie is an automated security assessment service that helps improve the security and compliance of applications deployed on AWS.
-
-**Incorrect:**
-
-**Amazon Inspector:** Amazon Inspector is an automated security assessment service that helps improve the security and compliance of applications deployed on Amazon EC2 instances. Amazon Inspector does not perform S3 data classification and automatic discovery.
-
-**Amazon GuardDuty:** GuardDuty is a threat detection service that continuously monitors for malicious activity and unauthorized behavior to protect your AWS accounts and workloads. GuardDuty does not perform S3 data classification.
-
-**AWS Secrets Manager:** Secrets Manager helps you protect secrets needed to access your applications, services, and IT resources. Secrets Manager does not perform S3 data classification and automatic discovery.
+# AWS Certified Cloud Practitioner Official Practice Question Set (CLF-C02)
+
+## AWS Services and Descriptions
+
+- **AWS CodeArtifact**: Managed artifact repository service that stores and shares software ready for deployment. Not a source code management service.
+- **AWS CodeBuild**: Service to automatically compile source code, run unit tests, and produce software packages ready for deployment. Not a code management service.
+- **AWS CodePipeline**: Manages the movement of code between individual services. Not a source code storage service.
+- **AWS CodeCommit**: Source code version control service that helps users store and manage developers' source code in AWS.
+- **AWS Global Accelerator**: Networking service that improves users’ network traffic performance by up to 60% using AWS global network infrastructure. Not a relational database.
+- **Amazon DynamoDB**: Fully managed NoSQL database service providing fast and predictable performance with seamless scalability. Not a relational database.
+- **Amazon Aurora**: MySQL- and PostgreSQL-compatible relational database built for the cloud, combining the performance and availability of traditional enterprise databases with the simplicity and cost-effectiveness of open-source databases.
+- **Amazon Elastic Block Store (Amazon EBS)**: High-performance block-storage service used with Amazon EC2 for throughput- and transaction-intensive workloads. Not a relational database.
+- **Amazon CloudWatch**: Monitors AWS resources and applications in real-time, can be used with AWS CloudTrail to monitor and receive alerts about console sign-in events involving the AWS account root user.
+- **AWS Config**: Assesses, audits, and evaluates the configurations of AWS resources. Cannot alert about console sign-in events involving the AWS account root user.
+- **AWS Trusted Advisor**: Provides real-time guidance to help provision resources according to AWS best practices. Cannot alert about console sign-in events involving the AWS account root user.
+- **AWS Identity and Access Management (IAM)**: Manages access to AWS services and resources securely. Cannot alert about console sign-in events involving the AWS account root user.
+
+## Practice Questions and Answers
+
+1. **How does AWS charge for AWS Lambda usage once the free tier has been exceeded?**
+   - By the time it takes for the Lambda function to run
+   - By the number of requests made for a given Lambda function
+
+2. **A user deploys an Amazon RDS DB instance in multiple Availability Zones. This strategy involves which pillar of the AWS Well-Architected Framework?**
+   - Reliability
+
+3. **Each department within a company has its own independent AWS account and its own payment method. The company needs to centralize departmental governance and consolidate payments.**
+   - Create an organization in AWS Organizations with all features enabled within one account. Invite all accounts to join the organization.
+   - Organizations provide centralized governance and billing for an AWS environment, including multiple accounts.
+
+4. **What are the advantages of deploying an application with Amazon EC2 instances in multiple Availability Zones? (Select TWO.)**
+   - Increasing the availability of the application
+   - Availability Zones are designed for physical redundancy and to provide resilience with uninterrupted performance.
+
+5. **Which tasks are the customer's responsibility according to the AWS shared responsibility model? (Select TWO.)**
+   - Configure IAM users according to the principle of least privilege.
+   - Configure an Amazon S3 bucket to allow public access.
+
+6. **A company wants to create a learning application for students. The learning application must give students the option to choose a button to have the text read out loud to them.**
+   - **Correct**: 
+     - **Amazon Polly**: Machine learning service that converts text to speech, providing the ability to read text out loud.
+   - **Incorrect**:
+     - **Amazon Transcribe**: Converts audio data to text.
+     - **Amazon Translate**: Language translation service.
+     - **Amazon Textract**: Extracts text from scanned documents.
+
+7. **A company wants to establish a consistent and private connection from the company's on-premises data center to the AWS Cloud.**
+   - **Correct**: 
+     - **AWS Direct Connect**: Links your internal network to a Direct Connect location through a standard Ethernet fiber-optic cable, providing a consistent and private connection.
+   - **Incorrect**:
+     - **AWS Client VPN**: Connects individual laptops to AWS, not an entire data center.
+     - **AWS Connect**: Omnichannel cloud contact center for customer service.
+     - **AWS Site-to-Site VPN**: Creates an encrypted network path using the internet, not providing a consistent and private connection.
+
+8. **A company has an on-premises Linux-based server with an Oracle database that runs on it. The company wants to migrate the database server to run on an Amazon EC2 instance in AWS.**
+   - **Correct**: 
+     - **AWS Application Migration Service (AWS MGN)**: Automated lift-and-shift solution to migrate physical servers and databases to EC2 instances in AWS.
+   - **Incorrect**:
+     - **AWS Database Migration Service (AWS DMS)**: Migrates data from an on-premises database to a database in AWS.
+     - **AWS Migration Hub**: Helps plan and track application migrations.
+     - **AWS Application Discovery Service**: Collects information to help plan a migration to AWS.
+
+9. **A company is hosting a static website from a single Amazon S3 bucket.**
+   - **Correct**: 
+     - **Amazon CloudFront**: Speeds up the distribution of web content by caching content in edge locations.
+   - **Incorrect**:
+     - **AWS Elastic Beanstalk**: Deploys and scales web applications but does not reduce website latency.
+     - **Amazon DynamoDB Accelerator (DAX)**: Reduces response times from a DynamoDB table but cannot host static websites.
+     - **Amazon Route 53**: Directs traffic to S3 buckets but cannot reduce latency with a single bucket.
+
+10. **Which credential components are required to gain programmatic access to an AWS account? (Select TWO.)**
+    - An access key ID
+    - A secret access key
+
+11. **What is the MINIMUM AWS Support plan that provides technical support through phone calls?**
+    - **Correct**: 
+      - **Business**: Allows calling or chatting with technical support.
+    - **Incorrect**:
+      - **Enterprise**: Provides phone support but is not the minimum plan.
+      - **Developer**: Allows only email support tickets, no phone support.
+      - **Basic**: Provides non-technical support but no technical phone support.
+
+12. **Which AWS service allows customers to purchase unused Amazon EC2 capacity at an often discounted rate?**
+    - **Correct**: 
+      - **Spot Instances**: Access unused EC2 capacity at a discounted rate.
+    - **Incorrect**:
+      - **Reserved Instances**: Reserve capacity but not necessarily unused capacity.
+      - **On-Demand Instances**: Default purchase option, not discounted.
+      - **Dedicated Instances**: Run on dedicated hardware, not discounted.
+
+13. **What are the benefits of using the AWS Cloud for companies with customers in many countries around the world? (Select TWO.)**
+    - Companies can deploy applications in multiple AWS Regions to reduce latency.
+    - Amazon CloudFront has multiple edge locations around the world to reduce latency.
+
+14. **Which of the functionalities are characteristics of Amazon S3? (Select TWO.)**
+    - An object store
+    - A durable file system
+
+15. **A company requires an encrypted connection between the company's on-premises servers and AWS. The connection must use the company's existing internet connection.**
+    - **Correct**:
+      - **AWS Site-to-Site VPN**: Creates an encrypted network path using the internet.
+
+16. **A user needs to automatically discover, classify, and protect sensitive data stored in Amazon S3.**
+    - **Correct**:
+      - **Amazon Macie**: Automated security assessment service for data in S3.
+    - **Incorrect**:
+      - **Amazon Inspector**: Assesses security for applications on EC2 instances.
+      - **Amazon GuardDuty**: Detects threats but does not classify S3 data.
+      - **AWS Secrets Manager**: Protects access secrets, not classifying S3 data.
